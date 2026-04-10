@@ -271,45 +271,80 @@ footer {
   </div>
 </div></nav>
 <main>
-<h2 class="section-title">Research</h2>
-<div class="paper-category">Working Papers</div>
-<div class="paper">
-  <div class="paper-info">
-    <h3><a href="#">Paper Title One: Evidence from a Natural Experiment</a></h3>
-    <div class="paper-meta">
-      <span class="coauthors">with Coauthor Name and Coauthor Name</span>
-      <span class="status">Working Paper</span>
+  <h2 class="section-title">Research</h2>
+
+  <div class="paper-category">Working Papers</div>
+
+  <div class="paper">
+    <div class="paper-info">
+      <h3><a href="#">Non-Toxic Peers: Long-Run Returns from an Anti-Bullying Program</a></h3>
+      <div class="paper-meta">
+        <span class="coauthors">with Ana Costa-Ram&oacute;n, Ana Rodr&iacute;guez-Gonz&aacute;lez, Ursina Schaede, and Christina Salmivalli</span>
+        <span class="status">Working Paper</span>
+      </div>
+      <div style="margin-bottom:10px"><a href="https://www.socialscienceregistry.org/trials/10879" style="font-size:13px;color:var(--accent);text-decoration:none;font-weight:500">AEA RCT Registry 0010879</a></div>
+      <button class="abstract-toggle" onclick="this.nextElementSibling.classList.toggle('open'); this.textContent = this.nextElementSibling.classList.contains('open') ? 'Abstract ▲' : 'Abstract ▼'">Abstract ▼</button>
+      <div class="abstract-text">
+        [Abstract placeholder — add your abstract here.]
+      </div>
     </div>
-    <button class="abstract-toggle" onclick="this.nextElementSibling.classList.toggle('open'); this.textContent = this.nextElementSibling.classList.contains('open') ? 'Abstract ▲' : 'Abstract ▼'">Abstract ▼</button>
-    <div class="abstract-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-  </div>
-  <div class="paper-graph"><svg viewBox="0 0 200 140"><rect width="200" height="140" fill="#f5f7f9"/><line x1="30" y1="115" x2="180" y2="115" stroke="#ccc" stroke-width="1"/><line x1="30" y1="25" x2="30" y2="115" stroke="#ccc" stroke-width="1"/><polyline points="35,95 60,88 85,72 110,65 135,45 160,38 175,35" fill="none" stroke="#2c5f7c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><g fill="#2c5f7c" opacity=".15"><circle cx="35" cy="95" r="3"/><circle cx="60" cy="88" r="3"/><circle cx="85" cy="72" r="3"/><circle cx="110" cy="65" r="3"/><circle cx="135" cy="45" r="3"/><circle cx="160" cy="38" r="3"/><circle cx="175" cy="35" r="3"/></g><text x="105" y="132" text-anchor="middle" font-size="8" fill="#999" font-family="DM Sans,sans-serif">X Variable</text><text x="14" y="70" text-anchor="middle" font-size="8" fill="#999" font-family="DM Sans,sans-serif" transform="rotate(-90,14,70)">Y Variable</text></svg></div>
-</div>
-<div class="paper">
-  <div class="paper-info">
-    <h3><a href="#">Paper Title Two: A Quasi-Experimental Approach</a></h3>
-    <div class="paper-meta">
-      <span class="coauthors">with Coauthor Name</span>
-      <span class="status">R&amp;R</span>
+    <div class="paper-graph">
+      <!-- Replace with your figure: <img src="nontoxic_figure.png" alt="Main results" style="width:100%;height:100%;object-fit:contain"> -->
+      <svg viewBox="0 0 200 140">
+        <rect width="200" height="140" fill="#f5f7f9"/>
+        <!-- Panel (a): Educational Attainment -->
+        <line x1="10" y1="8" x2="10" y2="65" stroke="#ccc" stroke-width=".5"/>
+        <line x1="10" y1="65" x2="95" y2="65" stroke="#ccc" stroke-width=".5"/>
+        <line x1="50" y1="8" x2="50" y2="65" stroke="#ccc" stroke-width=".5" stroke-dasharray="2,2"/>
+        <text x="50" y="6" text-anchor="middle" font-size="5" fill="#555" font-family="DM Sans,sans-serif" font-weight="600">(a) Education</text>
+        <!-- Upper Sec -->
+        <line x1="52" y1="16" x2="62" y2="16" stroke="#2c5f7c" stroke-width="1.5" opacity=".4"/>
+        <circle cx="55" cy="16" r="2" fill="#2c5f7c"/>
+        <!-- Academic Upper Sec -->
+        <line x1="48" y1="26" x2="80" y2="26" stroke="#2c5f7c" stroke-width="1.5" opacity=".4"/>
+        <circle cx="63" cy="26" r="2" fill="#2c5f7c"/>
+        <!-- Matriculation -->
+        <line x1="45" y1="36" x2="78" y2="36" stroke="#2c5f7c" stroke-width="1.5" opacity=".4"/>
+        <circle cx="60" cy="36" r="2" fill="#2c5f7c"/>
+        <!-- University -->
+        <line x1="45" y1="46" x2="78" y2="46" stroke="#2c5f7c" stroke-width="1.5" opacity=".4"/>
+        <circle cx="62" cy="46" r="2" fill="#2c5f7c"/>
+        <text x="8" y="17" text-anchor="end" font-size="3.5" fill="#888" font-family="DM Sans,sans-serif">Upper Sec.</text>
+        <text x="8" y="27" text-anchor="end" font-size="3.5" fill="#888" font-family="DM Sans,sans-serif">Acad. Upper</text>
+        <text x="8" y="37" text-anchor="end" font-size="3.5" fill="#888" font-family="DM Sans,sans-serif">Matric. Exam</text>
+        <text x="8" y="47" text-anchor="end" font-size="3.5" fill="#888" font-family="DM Sans,sans-serif">Uni. Grad.</text>
+
+        <!-- Panel (c): Earnings -->
+        <line x1="110" y1="8" x2="110" y2="65" stroke="#ccc" stroke-width=".5"/>
+        <line x1="110" y1="65" x2="195" y2="65" stroke="#ccc" stroke-width=".5"/>
+        <line x1="145" y1="8" x2="145" y2="65" stroke="#ccc" stroke-width=".5" stroke-dasharray="2,2"/>
+        <text x="152" y="6" text-anchor="middle" font-size="5" fill="#555" font-family="DM Sans,sans-serif" font-weight="600">(c) Earnings</text>
+        <!-- Earnings -->
+        <line x1="135" y1="28" x2="188" y2="28" stroke="#2c5f7c" stroke-width="1.5" opacity=".4"/>
+        <circle cx="170" cy="28" r="2" fill="#2c5f7c"/>
+        <!-- Earnings | LFP -->
+        <line x1="130" y1="48" x2="185" y2="48" stroke="#2c5f7c" stroke-width="1.5" opacity=".4"/>
+        <circle cx="165" cy="48" r="2" fill="#2c5f7c"/>
+        <text x="108" y="29" text-anchor="end" font-size="3.5" fill="#888" font-family="DM Sans,sans-serif">Earnings</text>
+        <text x="108" y="49" text-anchor="end" font-size="3.5" fill="#888" font-family="DM Sans,sans-serif">Earn. | LFP</text>
+
+        <!-- Shared caption -->
+        <text x="100" y="78" text-anchor="middle" font-size="4.5" fill="#555" font-family="DM Sans,sans-serif">Long-Term Academic &amp; Labor Market Outcomes</text>
+      </svg>
     </div>
-    <button class="abstract-toggle" onclick="this.nextElementSibling.classList.toggle('open'); this.textContent = this.nextElementSibling.classList.contains('open') ? 'Abstract ▲' : 'Abstract ▼'">Abstract ▼</button>
-    <div class="abstract-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
   </div>
-  <div class="paper-graph"><svg viewBox="0 0 200 140"><rect width="200" height="140" fill="#f5f7f9"/><line x1="30" y1="115" x2="180" y2="115" stroke="#ccc" stroke-width="1"/><line x1="30" y1="25" x2="30" y2="115" stroke="#ccc" stroke-width="1"/><line x1="100" y1="25" x2="100" y2="115" stroke="#ccc" stroke-width="1" stroke-dasharray="4,3"/><polyline points="35,80 50,78 65,82 80,75 95,77" fill="none" stroke="#2c5f7c" stroke-width="2.5" stroke-linecap="round"/><polyline points="105,58 120,52 135,48 150,45 165,40 175,38" fill="none" stroke="#2c5f7c" stroke-width="2.5" stroke-linecap="round"/><text x="100" y="22" text-anchor="middle" font-size="7.5" fill="#999" font-family="DM Sans,sans-serif">Treatment</text><text x="105" y="132" text-anchor="middle" font-size="8" fill="#999" font-family="DM Sans,sans-serif">Time</text></svg></div>
-</div>
-<div class="paper-category">Work in Progress</div>
-<div class="paper">
-  <div class="paper-info">
-    <h3><a href="#">Paper Title Three: Preliminary Evidence</a></h3>
-    <div class="paper-meta">
-      <span class="coauthors">with Coauthor Name</span>
-      <span class="status">In Progress</span>
+
+  <div class="paper-category">Work in Progress</div>
+
+  <div class="paper" style="grid-template-columns:1fr">
+    <div class="paper-info">
+      <h3><a href="#">Teaching at the Right Level: Evidence from an AI-driven Platform in Higher Education</a></h3>
+      <div class="paper-meta">
+        <span class="coauthors">with Justinas Grigaitis</span>
+        <span class="status">In Progress</span>
+      </div>
     </div>
-    <button class="abstract-toggle" onclick="this.nextElementSibling.classList.toggle('open'); this.textContent = this.nextElementSibling.classList.contains('open') ? 'Abstract ▲' : 'Abstract ▼'">Abstract ▼</button>
-    <div class="abstract-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
   </div>
-  <div class="paper-graph"><svg viewBox="0 0 200 140"><rect width="200" height="140" fill="#f5f7f9"/><line x1="30" y1="115" x2="180" y2="115" stroke="#ccc" stroke-width="1"/><line x1="30" y1="25" x2="30" y2="115" stroke="#ccc" stroke-width="1"/><rect x="42" y="70" width="18" height="45" rx="2" fill="#2c5f7c" opacity=".25"/><rect x="68" y="55" width="18" height="60" rx="2" fill="#2c5f7c" opacity=".4"/><rect x="94" y="42" width="18" height="73" rx="2" fill="#2c5f7c" opacity=".55"/><rect x="120" y="60" width="18" height="55" rx="2" fill="#2c5f7c" opacity=".7"/><rect x="146" y="35" width="18" height="80" rx="2" fill="#2c5f7c" opacity=".85"/><text x="105" y="132" text-anchor="middle" font-size="8" fill="#999" font-family="DM Sans,sans-serif">Category</text></svg></div>
-</div>
 </main>
 <footer>&copy; 2026 Tabea Braun</footer>
 </body></html>
